@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>DZ-23</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <form>
+        <label class="lableTitle">
+          Ім'я
+          <div>
+            <input class="fullLine" type="text" name="name" />
+          </div>
+        </label>
+        <label class="lableTitle">
+          Прізвище
+          <div>
+            <input class="fullLine" type="text" name="surname" />
+          </div>
+        </label>
+        <label class="lableTitle">
+          Дата народження
+          <div>
+            <input class="fullLine" type="text" name="bDate" />
+          </div>
+        </label>
+        <label for="none" class="lableTitle">
+          Стать
+          <div>
+            <input type="radio" id="sexRadioMan" name="sexRadio" value="M" />
+            <label for="sexRadioMan">Чоловіча</label>
+          </div>
+          <div>
+            <input type="radio" id="sexRadioWoman" name="sexRadio" value="W" />
+            <label for="sexRadioWoman">Жіноча</label>
+          </div>
+        </label>
+        <label class="lableTitle">
+          Місто
+          <div>
+            <select name="city">
+              <option value="">Оберіть місто</option>
+              <option value="Дніпро">Дніпро</option>
+              <option value="Київ">Київ</option>
+              <option value="Львів">Львів</option>
+            </select>
+          </div>
+        </label>
+        <label class="lableTitle">
+          Адреса
+          <div>
+            <textarea
+              name="adress"
+              class="fullLine"
+              rows="2"
+              spellcheck="false"
+            ></textarea>
+          </div>
+        </label>
+        <label class="lableTitle" for="none">
+          Мови, якими володіє
+          <div>
+            <input
+              type="checkbox"
+              id="checkEnLang"
+              name="checkLang"
+              value="en"
+            />
+            <label for="checkEnLang">English</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="checkUaLang"
+              name="checkLang"
+              value="ua"
+            />
+            <label for="checkUaLang">Українська</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="checkRuLang"
+              name="checkLang"
+              value="ru"
+            />
+            <label for="checkRuLang">Русский</label>
+          </div>
+        </label>
+        <div class="buttonFooterRow">
+          <button class="btn-secondary" type="reset">Очистити</button>
+          <button class="btn-primary" id="saveButton" type="submit">
+            Зберегти
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
