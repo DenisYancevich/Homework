@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.mainDisplay {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.imgToChange {
+  width: 70%;
+}
+
+.sideButton {
+  width: 15%;
+}
