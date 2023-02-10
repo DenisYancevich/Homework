@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>DZ-26</title>
+  </head>
+
+  <body class="flexColumn">
+    <button class="ordersButton">My orders</button>
+    <div class="container mainBorderBox">
+      <div class="mainBorderBox width25"></div>
+      <div class="mainBorderBox width25"></div>
+      <div class="mainBorderBox width50 flexColumn"></div>
+    </div>
+    <div class="modalContainer flexColumn" id="congratsModal">
+      <div class="modalBody mainBorderBox flexColumn">
+        <div>
+          <h1>Congrats on buying our product!</h1>
+          <div></div>
+        </div>
+        <div id="shipmentInfoTable"></div>
+        <button class="closeModal btn-secondary">Close</button>
+      </div>
+    </div>
+    <div class="modalContainer flexColumn" id="ordersModal">
+      <div class="modalBody mainBorderBox flexColumn">
+        <div>
+          <h1>My orders</h1>
+          <div id="ordersInfoTable"></div>
+        </div>
+        <button class="closeModal btn-secondary" id="ordersCloseButton">
+          Close
+        </button>
+      </div>
+    </div>
+    <div class="modalContainer flexColumn" id="errorModal">
+      <div class="modalBody mainBorderBox flexColumn">
+        <div>
+          <h1>Given shipment info is wrong!</h1>
+          <div>
+            Please provide correct information to every field of the form
+          </div>
+        </div>
+        <div id="shipmentInfoTable"></div>
+        <button class="closeModal btn-secondary" id="errorCheckButton">
+          Close
+        </button>
+      </div>
+    </div>
+    <div class="modalContainer flexColumn" id="formModal">
+      <div class="modalBody mainBorderBox flexColumn">
+        <div>
+          <h1>Fill the form below to order a product!</h1>
+          <form id="shipmentInfoForm">
+            <label class="lableTitle">
+              Full name
+              <div>
+                <input class="fullLine" type="text" name="fullName" />
+              </div>
+            </label>
+            <label class="lableTitle">
+              City
+              <div>
+                <select name="city">
+                  <option value="">Choose city...</option>
+                  <option value="Dnipro">Dnipro</option>
+                  <option value="Kyiv">Kyiv</option>
+                  <option value="Lviv">Lviv</option>
+                </select>
+              </div>
+            </label>
+            <label class="lableTitle">
+              Quantity
+              <div>
+                <input class="fullLine" type="number" name="quantity" />
+              </div>
+            </label>
+            <label class="lableTitle">
+              Comment
+              <div>
+                <textarea
+                  name="comment"
+                  class="fullLine"
+                  rows="3"
+                  spellcheck="false"
+                ></textarea>
+              </div>
+            </label>
+            <div class="buttonFooterRow">
+              <button class="btn-secondary" type="reset">Reset</button>
+              <button class="btn-primary" id="saveButton" type="submit">
+                Buy!
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
