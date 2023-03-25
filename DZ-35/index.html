@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>DZ-35</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="postContainer mainBorderBox">
+        <form id="getPostIdForm">
+          <label class="lableTitle">
+            Input numbers:
+            <div class="fullLine">
+              <input class="fullLine" type="text" name="numbers" required />
+            </div>
+          </label>
+          <label for="none" class="lableTitle">
+            Sorting direction
+            <div>
+              <input type="radio" name="sortRadio" value="asc" required />
+              <label for="sexRadioMan">Asc</label>
+            </div>
+            <div>
+              <input type="radio" name="sortRadio" value="desc" required />
+              <label for="sexRadioWoman">Desc</label>
+            </div>
+          </label>
+          <button type="submit">Sort!</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
