@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>DZ-34</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <form>
+        <label class="lableTitle">
+          Name
+          <div>
+            <input
+              class="fullLine"
+              type="text"
+              name="name"
+              required
+              minlength="10"
+            />
+          </div>
+        </label>
+        <label class="lableTitle">
+          Age
+          <div>
+            <input
+              class="fullLine"
+              min="0"
+              max="100"
+              type="number"
+              name="age"
+              required
+            />
+          </div>
+        </label>
+        <label class="lableTitle">
+          Occupation
+          <div>
+            <textarea
+              class="fullLine"
+              type="textfield"
+              rows="2"
+              name="occupation"
+              required
+              spellcheck="false"
+            ></textarea>
+          </div>
+        </label>
+        <button id="saveButton" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="modalContainer flexColumn hidden" id="ordersModal">
+      <div class="modalBody mainBorderBox flexColumn">
+        <div>
+          <h1>Pokemon Info</h1>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
