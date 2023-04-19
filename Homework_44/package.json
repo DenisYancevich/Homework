@@ -1,0 +1,17 @@
+{
+  "name": "homework_44",
+  "version": "1.0.0",
+  "description": "",
+  "main": "kramarMethod.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npx jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
