@@ -1,0 +1,12 @@
+.column {
+  border: 5px dashed black;
+  min-height: 600px;
+  width: 650px;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-sizing: border-box;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

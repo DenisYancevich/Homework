@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid lightgray;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.tick {
+  border: 2px solid lightgray;
+  height: 26px;
+  width: 26px;
+  border-radius: 5px;
+  margin: auto 0;
+  flex-shrink: 0;
+  display: flex;
+}
+
+svg {
+  margin: auto;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.text {
+  text-align: left;
+  font-size: 26px;
+}
+
+.checked {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.checked svg {
+  opacity: 1;
+}
