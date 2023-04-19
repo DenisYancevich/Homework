@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  height: 100vh;
+  position: relative;
+  padding: 20px;
+}
+
+.nonselect {
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

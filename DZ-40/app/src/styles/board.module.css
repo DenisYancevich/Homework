@@ -1,0 +1,19 @@
+.board {
+  margin: auto;
+  box-sizing: border-box;
+  border: 3px solid black;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.emojiField {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

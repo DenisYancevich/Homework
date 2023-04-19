@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button {
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 24px;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+.active {
+  background-color: rgb(127, 150, 224) !important;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: lightblue;
+}

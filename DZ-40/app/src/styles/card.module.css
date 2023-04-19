@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  width: fit-content;
+  transition: background-color 0.5s;
+}
+
+.active {
+  background-color: rgb(127, 150, 224) !important;
+  transition: background-color 0.2s;
+}
+
+.card:hover {
+  background-color: lightblue;
+}
+
+.emoji {
+  text-align: center;
+  font-size: 112px;
+  margin: 0;
+}
+
+.counter {
+  text-align: center;
+  font-size: 22px;
+  margin: 0;
+}
